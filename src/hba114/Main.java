@@ -57,7 +57,15 @@ public class Main {
 
         // PerfectNumbers function includes 21th lesson in youtube. For see result
         // uncomment line below
-        PerfectNumbers();
+        // PerfectNumbers();
+
+        // FriendNumbers function includes 22nd lesson in youtube. For see result
+        // uncomment line below
+        // FriendNumbers();
+
+        // FindNumber function includes 23th lesson in youtube. For see result
+        // uncomment line below
+        FindNumber();
 
     }
 
@@ -524,5 +532,64 @@ public class Main {
     // PerfectNumbers function includes 21th lesson in youtube.
     public static void PerfectNumbers() {
 
+        // first perfect number is 6, second is 28, ... 8128 are perfect numbers.
+        int number = 8128;
+        int totalOfProperDivs = 0;
+
+        // A perfect number is a positive integer that is equal to the sum of its
+        // positive divisors, excluding the number itself. So number is not included in
+        // for loop
+        for (int i = 1; i < number; i++) {
+            if (number % i == 0) {
+                totalOfProperDivs += i;
+            }
+        }
+
+        if (totalOfProperDivs == number)
+            System.out.println(number + " is a perfect number.");
+        else
+            System.out.println(number + " is not a perfect number.");
+    }
+
+    // FriendNumbers function includes 22nd lesson in youtube.
+    public static void FriendNumbers() {
+        int number1 = 6232, number2 = 6368;
+        int sumOfDivs1 = 0, sumOfDivs2 = 0;
+
+        for (int i = 1; i < number1; i++) {
+            if (number1 % i == 0) {
+                sumOfDivs1 += i;
+            }
+        }
+
+        for (int i = 1; i < number2; i++) {
+            if (number2 % i == 0) {
+                sumOfDivs2 += i;
+            }
+        }
+
+        if (sumOfDivs1 == number2 && sumOfDivs2 == number1)
+            System.out.println(number1 + " and " + number2 + " are friendly numbers.");
+        else
+            System.out.println(number1 + " and " + number2 + " are not friendly numbers.");
+    }
+
+    // FindNumber function includes 23th lesson in youtube.
+    public static void FindNumber() {
+        int[] numbers = new int[] { 1, 2, 5, 7, 9, 0 };
+        int searchFor = 6;
+        boolean isIncluded = false;
+
+        for (int number : numbers) {
+            if (number == searchFor) {
+                isIncluded = true;
+                break;
+            }
+        }
+
+        if (isIncluded)
+            System.out.println(searchFor + " is included in numbers.");
+        else
+            System.out.println(searchFor + " is not included in numbers.");
     }
 }
