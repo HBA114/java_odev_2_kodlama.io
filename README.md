@@ -1,6 +1,7 @@
 # Java Odev 2 Kodlama.io
 
 - This repository created for [(2022) Software Developer Training Camp - JAVA](https://www.kodlama.io/p/yazilim-gelistirici-yetistirme-kampi21) as homework.
+- You can run this project with Intellij Idea or Visual Studio Code. For running on another environmetns configure project for that environments.
 
 ## Getting Started
 
