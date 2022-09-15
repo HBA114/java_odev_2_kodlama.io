@@ -14,7 +14,7 @@ public class Variables {
         System.out.println("My students count is : 9");
 
         System.out.println();
-        // if another students comes tolesson we have to change the old count in all
+        // if another students comes to lesson we have to change the old count in all
         // places we used that number.
         System.out.println("My students count is : 10");
         System.out.println("My students count is : 10");
