@@ -36,7 +36,28 @@ public class Main {
 
         // RecapDemo2 function includes 15th lesson in youtube. For see result uncomment
         // line below
-        RecapDemo2();
+        // RecapDemo2();
+
+        // MultiDimensionalArrays function includes 16th lesson in youtube. For see
+        // result uncomment line below
+        // MultiDimensionalArrays();
+
+        // Strings function includes 17th and 18th lessons in youtube. For see result
+        // uncomment
+        // line below
+        // Strings();
+
+        // IsPrime function includes 19th lesson in youtube. For see result uncomment
+        // line below
+        // IsPrime();
+
+        // BoldAndThinLetters function includes 20th lesson in youtube. For see result
+        // uncomment line below
+        // BoldAndThinLetters();
+
+        // PerfectNumbers function includes 21th lesson in youtube. For see result
+        // uncomment line below
+        PerfectNumbers();
 
     }
 
@@ -345,5 +366,163 @@ public class Main {
 
         System.out.println("Total = " + total);
         System.out.println("Max = " + max);
+    }
+
+    // MultiDimensionalArrays function includes 16th lesson in youtube.
+    public static void MultiDimensionalArrays() {
+
+        String[][] cities = new String[3][3];
+
+        // line 0 column 0
+        cities[0][0] = "Istanbul";
+        // line 0 column 1
+        cities[0][1] = "Bursa";
+        // line 0 column 2
+        cities[0][2] = "Bilecik";
+
+        // line 1 column 0
+        cities[1][0] = "Ankara";
+        // line 1 column 1
+        cities[1][1] = "Konya";
+        // line 1 column 2
+        cities[1][2] = "Kayseri";
+
+        // line 3 column 0
+        cities[2][0] = "Diyarbakır";
+        // line 3 column 1
+        cities[2][1] = "Şanlıurfa";
+        // line 3 column 2
+        cities[2][2] = "Gaziantep";
+
+        // First for loop switch between lines,
+        for (int i = 0; i < 3; i++) {
+            System.out.println("<---------------------------------->");
+            // Second for loop switch between columns,
+            for (int j = 0; j < 3; j++) {
+                System.out.println("Line: " + i + ", Column: " + j + " City: " + cities[i][j]);
+            }
+            // After every line ends this line of code gives 1 line space
+            System.out.println();
+        }
+    }
+
+    // Strings function includes 17th and 18th lessons in youtube.
+    public static void Strings() {
+        String message = "Today weather is beautiful.";
+
+        System.out.println(message);
+
+        System.out.println("Message element count : " + message.length());
+
+        System.out.println("6th element of message is : " + message.charAt(6));
+
+        // if we not assign to variable the result of concat method ...
+        System.out.println(message.concat(" Lets have a picnic in garden."));
+        // original message in message variable will not change
+        System.out.println(message);
+
+        // we need to assign to variable the result of concat method.
+        message = message.concat(" Lets have a picnic in garden.");
+
+        System.out.println(message);
+
+        System.out.println(message.startsWith("A"));
+
+        System.out.println(message.endsWith("."));
+
+        char[] characters = new char[10];
+        message.getChars(0, 9, characters, 0);
+
+        System.out.println(characters);
+
+        System.out.println(message.indexOf('g'));
+
+        System.out.println(message.indexOf("picnic"));
+
+        System.out.println(message.indexOf("e"));
+
+        System.out.println(message.lastIndexOf("e"));
+
+        // if we not assign to variable the result of replace method ...
+        System.out.println(message.replace("garden", "park"));
+        // original message in message variable will not change
+        System.out.println(message);
+
+        String newMessage = message.replace("garden", "park");
+
+        System.out.println(newMessage);
+
+        System.out.println(message.substring(2, 10));
+
+        for (String word : message.split(" ")) {
+            System.out.println(word);
+        }
+
+        System.out.println(message.toLowerCase());
+
+        System.out.println(message.toUpperCase());
+    }
+
+    // IsPrime function includes 19th lesson in youtube.
+    public static void IsPrime() {
+        int number = 5;
+
+        int remainder = number % 2;
+
+        System.out.println(remainder);
+
+        boolean isPrime = true;
+
+        if (number == 1)
+            isPrime = false;
+        if (number < 1) {
+            System.out.println("Number not valid.");
+            isPrime = false;
+        }
+
+        for (int i = 2; i < number; i++) {
+            if (number == 2) {
+                isPrime = true;
+                break;
+            }
+            if (number % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime)
+            System.out.println("Number : " + number + " is prime.");
+        else
+            System.out.println("Number : " + number + " is not prime.");
+    }
+
+    // BoldAndThinLetters function includes 20th lesson in youtube.
+    public static void BoldAndThinLetters() {
+        char letter = 'A';
+
+        switch (letter) {
+            case 'A':
+            case 'I':
+            case 'O':
+            case 'U':
+                System.out.println("Bold vowel letter"); // vowel is 'ünlü-sesli harf' in Turkish, opposite of vowel:
+                                                         // consonant is 'ünsüz-sessiz harf' in Turkish
+                break;
+            case 'E':
+            case 'İ':
+            case 'Ö':
+            case 'Ü':
+                System.out.println("Thin vowel letter");
+                break;
+            default:
+                System.out.println("Consonant letter");
+                break;
+        }
+    }
+
+    // PerfectNumbers function includes 21th lesson in youtube.
+    public static void PerfectNumbers() {
+
     }
 }
