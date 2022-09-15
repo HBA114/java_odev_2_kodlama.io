@@ -6,15 +6,107 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Current File",
+            "name": "Launch Variables",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "hba114.variables.Variables",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
         },
         {
             "type": "java",
-            "name": "Launch Main",
+            "name": "Launch FindNumber",
             "request": "launch",
-            "mainClass": "hba114.Main",
+            "mainClass": "hba114.findNumber.FindNumber",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch FriendNumbers",
+            "request": "launch",
+            "mainClass": "hba114.friendNumbers.FriendNumbers",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PerfectNumbers",
+            "request": "launch",
+            "mainClass": "hba114.perfectNumbers.PerfectNumbers",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Letters",
+            "request": "launch",
+            "mainClass": "hba114.Letters.Letters",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsPrime",
+            "request": "launch",
+            "mainClass": "hba114.isPrime.IsPrime",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RecapDemo2",
+            "request": "launch",
+            "mainClass": "hba114.recapDemo2.RecapDemo2",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RecapDemo",
+            "request": "launch",
+            "mainClass": "hba114.recapDemo.RecapDemo",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MultiDimensionalArrays",
+            "request": "launch",
+            "mainClass": "hba114.multiDimensionalArrays.MultiDimensionalArrays",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Loops",
+            "request": "launch",
+            "mainClass": "hba114.loops.Loops",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DataTypes",
+            "request": "launch",
+            "mainClass": "hba114.datatypes.DataTypes",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Conditionals",
+            "request": "launch",
+            "mainClass": "hba114.conditionals.Conditionals",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arrays",
+            "request": "launch",
+            "mainClass": "hba114.arrays.Arrays",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwitchStatement",
+            "request": "launch",
+            "mainClass": "hba114.switchStatement.SwitchStatement",
+            "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Strings",
+            "request": "launch",
+            "mainClass": "hba114.strings.Strings",
             "projectName": "java_odev_2_kodlama.io_cf9a2f1f"
         }
     ]
